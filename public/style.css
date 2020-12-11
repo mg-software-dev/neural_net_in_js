@@ -1,0 +1,93 @@
+
+
+body
+{
+    width: auto;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+
+#container
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+#main_container
+{
+    display: grid;
+    grid-template-columns: 9em 25em 9em;
+    justify-content: center;
+    margin-top: 2em;
+    margin-right: -1em;
+    margin-bottom: 2em;
+}
+
+#btn_container
+{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 3em 6em;
+}
+
+
+
+#drawing_grid
+{
+    display: grid;
+    cursor: crosshair;
+}
+
+
+#title_div
+{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+#title_div > h1
+{
+    text-decoration: underline;
+}
+
+
+#div_rules
+{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#title_div >h3
+{
+    text-align: center;
+}
+
+
+
+#div_btn_train
+{
+    margin-left: 12px;
+}
+
+
+.block
+{
+    width: 12px;
+    height: 12px;
+    background-color: aliceblue;
+    border : 1px solid black;
+}
+
+
+.selected
+{
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border : 1px solid black;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit classificator</title>
+</head>
+<body>
+    
+
+    <div id="title_div">
+        <h1>Digit classificator</h1>
+        <h3>This is a digit classificator using deep learning.
+        The algorithm is based on the book Make your own neural network by Tariq Rashid,
+        but i wrote it in javascript, and added suppport for multi layer networks and the tanh function.
+        The dataset used to train this network was a part of the MNIST dataset of handwrited numbers
+        The matrix library is from a youtube tutorial about neural networks made by a channel called the coding train. You can check the full code of this webpage in my github repo <a href="https://google.com" target="_blank" rel="noopener noreferrer">HERE</a> </h3>
+    </div>
+
+    <div id="div_rules">
+        <h4>How to use it? : you draw a number (only one at a time can be classified) and then press the get result button to ask the neural network what number it thinks it is, and the answer will appear below, to start again press clear canvas...</h4>
+
+        <h4>You can also train the network: draw a number, select the answer in the right side of the page and press the train button, have in mind that training takes time, so you probably have to draw a lot of numbers...The learning depends on the training, you can train this network to classify only one number for example, so it's up to you...(the training is lost if you reload the page) </h4>
+    </div>
+
+    <div id="main_container">
+
+        <div id="btn_container">
+            <div id="div_btn_clear">
+                <button id="btn_clear_canvas">Clear Canvas</button>
+            </div>
+        
+            <div id="div_btn_guess">
+                <button id="btn_guess_num">Get result</button>
+                <div id="div_answer">
+                    <h4 id="label_answer">The answer is:</h4>
+                    <h4 id="label_answer2">Second guess is:</h4>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div id="container">
+            <div id="drawing_grid"></div>
+        </div>
+
+
+        <div id="div_btn_train">
+            <div id="div_train">
+                <h4 id="label_train">The number is :</h4>
+                <input type="number" id="input_train"></input>
+            </div>
+            <button id="btn_train">Train</button>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./matrix_lib.js"></script>
+    <script src="./multi_layer_nn_lib.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
