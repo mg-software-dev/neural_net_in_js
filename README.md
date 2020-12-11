@@ -1,5 +1,8 @@
 # Neural network in js
 
+----
+
+You can try it [HERE](https://neural-net-js.herokuapp.com/)
 
 ----
 
