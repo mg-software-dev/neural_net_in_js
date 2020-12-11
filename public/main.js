@@ -1,6 +1,6 @@
 
 
-let url = "http://localhost:3001/get_trained_data";
+let url = "https://neural-net-js.herokuapp.com/get_trained_data";
 let n_net = {};
 
 fetch(url)
